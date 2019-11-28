@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/*
+#011126
+#B0D9D5
+#BF9341
+#D9B36C
+#BF6A4B
+*/
+
+body {
+    background-color: #011126;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Montserrat', sans-serif;
+}
+
+main h1{
+    color: #fff;
+    text-transform: uppercase;
+    text-align: center;
+    width: 50%;
+    margin: 0 auto;
+}
+
+main .status {
+    width: 400px;
+    font-weight: 600;
+    color: #011126;
+    background-color: #BF9341;
+    border-radius: 10px 10px 0 0;
+    z-index: -1;
+    padding-top: 10px;
+    transform: translateY(10%);
+    margin: 0 auto;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.move-counter {
+    display: flex;
+    justify-content: center;
+}
+
+#counter {
+    margin-left: 5px;
+}
+
+.game {
+    z-index: 999;
+    height: 450px;
+    width: 400px;
+    background-color: #BF9341;
+    padding: 20px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.board {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.box {
+    height: 100px;
+    width: 100px;
+    flex-basis: 25%;
+    background-color: #fff;
+    color: #011126;
+    text-align: center;
+    line-height: 100px;
+    font-weight: bold;
+    font-size: 2em;
+}
+
+.control {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.control p {
+    font-size: 24px;
+    text-transform: uppercase;
+    font-weight: 900;
+    color: #fff;
+    cursor: pointer;
+    transition-duration: .2s;
+    transition-delay: .25s;
+}
+
+.control p:hover {
+    font-size: 28px;
+}
