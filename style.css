@@ -410,6 +410,7 @@ header nav ul li a {
 
     .case div {
         padding: 10px 0;
+    }
 }
 
 /* FOOTER */
@@ -457,8 +458,6 @@ footer {
 .footer-content ul li img:hover {
     border: 5px solid #FFDC5E;
 }
-
-
 
 @media screen and (min-width: 1024px){
     .footer-content {
