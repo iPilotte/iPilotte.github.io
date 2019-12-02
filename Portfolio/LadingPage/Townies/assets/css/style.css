@@ -1,0 +1,195 @@
+@import url('https://fonts.googleapis.com/css?family=Lobster|Montserrat|Poppins|Roboto&display=swap');
+*{
+    box-sizing: border-box;
+}
+
+header,
+section,
+footer{
+    overflow-x: hidden;
+}
+
+:root{
+    --Poppins:"Poppins", cursive;
+    --Montserrat:"Montserrat", cursive;
+    --Roboto:"Roboto", cursive;
+    --Lobster:"Lobster", cursive;
+    --light-black: #2e2c2caf;
+    --light-green: rgba(159,255,204,1);
+    --light-gray: rgba(255,255,255,0.7);
+    --light-blue: #3db2ff;
+}
+
+/* Header */
+header{
+    background: linear-gradient(rgba(70, 83, 104, 0.5), rgba(19, 26, 37, 0.7)), url('../img/assorted-color-vehicle-vehicle-on-street-2422588.jpg') no-repeat fixed;
+    background-size: cover;
+    background-position: -10vh;
+    height: 90vh;
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 95%, 0% 100%);
+    clip-path: polygon(0 0, 100% 0, 100% 95%, 0% 100%);
+    font-family: var(--Montserrat);
+}
+
+header nav{
+    position: relative;
+    top: 0;
+    width: 100%;
+    background-color: rgba(0,0,0,0.6);
+    font-family: var(--Poppins);
+    color: white;
+    z-index: 999;
+}
+
+header nav i {
+    color: white;
+}
+
+header .navbar-brand {
+    font-weight: 900;
+}
+
+header nav a {
+    color: white;
+    text-transform: uppercase;
+}
+
+header nav a:hover{
+    color: var(--light-blue);
+}
+
+header .welcome-text{
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+header .welcome-text h1{
+    color: white;
+    font-weight: 900;
+    text-transform: uppercase;
+}
+
+header .welcome-text p{
+    color: whitesmoke;
+}
+
+header .welcome-text a{
+    width: 10rem;
+    background-color: whitesmoke;
+    padding: 1em;
+    font-weight: bold;
+    border-radius: 30px;
+    text-transform: uppercase;
+}
+
+header .welcome-text a:hover{
+    color:white;
+    background-color: var(--light-blue);
+}
+
+/* Section-About */
+
+main{
+    background-color: white;
+}
+
+.section-about{
+    font-family: var(--Poppins);
+    padding-bottom: 5vh;
+}
+
+.section-about h1{
+    margin-bottom: 2vh;
+}
+
+.section-about .about-text{
+    background: rgba(255,255,255,0.95);
+    z-index: 1;
+}
+
+.section-about .about-text span{
+    color: #3db2ff;
+}
+
+.section-about img{
+    max-width: 100%;
+    border: 10px solid whitesmoke;
+}
+
+/* Section-Services */
+
+.section-services {
+    padding: 3vh 0;
+    background-color: rgba(0,0,0,0.85);
+}
+
+.section-services h1{
+    color: white;
+    font-family: var(--Lobster);
+}
+
+.section-services .card{
+    margin: 10px;
+}
+
+.section-services .card a{
+    background: var(--light-blue);
+}
+
+.section-services .card-img-top{
+    max-width: 100%;
+    max-height: 200px;
+}
+
+
+/* Footer */
+
+footer{
+    padding: 3vh 0 5vh 0;
+    background: rgba(0,0,0,0.85);
+    color: whitesmoke;
+    border-top: 1px solid var(--light-blue);
+}
+
+footer .col-sm-12{
+    margin: 2vh;
+}
+
+footer .contact-info p{
+    color: rgba(255,255,255,0.7);
+}
+
+footer form input{
+    border-top-right-radius: 0 !important;
+    border-bottom-right-radius: 0 !important;
+    outline: none;
+}
+
+footer form button{
+    border-top-left-radius: 0 !important;
+    border-bottom-left-radius: 0 !important;
+    background: var(--light-blue) !important;
+}
+
+footer form button:hover{
+    background: white !important;
+}
+
+footer form button i{
+    color: rgba(0,0,0,0.85);
+}
+
+footer .social i{
+    color: var(--light-blue);
+    transform: all .3s ease-in-out;
+}
+footer .social i + i{
+    margin-left: 15px;
+}
+
+footer .social i:hover{
+    color: white;
+}

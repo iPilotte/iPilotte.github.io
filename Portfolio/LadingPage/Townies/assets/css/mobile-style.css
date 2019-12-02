@@ -1,0 +1,53 @@
+@media only screen and (min-width: 768px){
+    header{
+        background-position: 0vh;
+        -webkit-clip-path: polygon(0 0, 100% 0, 100% 90%, 0% 100%);
+        clip-path: polygon(0 0, 100% 0, 100% 90%, 0% 100%);
+    }
+
+    header nav{
+        padding-left:  5vw !important;
+        padding-right:  5vw !important;
+    }
+
+    .section-about .about-text{
+        padding: 2vh 1vh;
+        margin-right: -15vw;
+        border-radius: 10px;
+    }
+} 
+
+@media only screen and (min-width: 1024px){
+    header .welcome-text h1{
+        font-size: 3.5rem;
+    }
+    
+    header .welcome-text p{
+        color: whitesmoke;
+        font-size: 1.2rem;
+    }
+
+    .section-about .about-text{
+        height: 30rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .section-about .about-text p{
+        font-size: 1.2rem;
+    }
+
+    footer{
+        padding: 0;
+    }
+    footer .col-sm-12{
+        margin: 2vh 0 2vh 0;
+    }
+    footer .col-sm-12:nth-child(2){
+        padding-left: 5vw;
+    }
+    footer .col-sm-12:last-child{
+        text-align: right;
+    }
+}
